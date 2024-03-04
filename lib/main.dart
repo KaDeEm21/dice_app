@@ -1,3 +1,4 @@
+import 'package:dice_app/dice_roller.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,20 +15,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.grey.shade800,
         body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SizedBox(
-                height: 20,
-              ),
-              Image.asset('assets/images/dice-2.png', width: 200,),
-              const TextButton(
-                onPressed: null, child: Text(
-                "ROLL DICE", style: TextStyle(fontStyle: FontStyle.normal, fontSize: 30, color: Colors.white),
-              ),
-              )
-            ],
-          ),
+          child: Dice_roller(),
         ),
       ),
     );
